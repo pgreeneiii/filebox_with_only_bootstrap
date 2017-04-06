@@ -5,7 +5,6 @@
    3. Fix width of hero photo so it isn't so large (maybe need to find a way to center it?)
    4. Add margins between the registration buttons AND a line that distinctly separates them
    5. Add margins between rows
-   6. Add Link Content at bottom of page
 -->
 
 <html>
@@ -50,9 +49,10 @@
 
 <body>
    <div class="container">
+
       <!--Row 1: Hero Picture -->
       <div class="row">
-         <div class="col-xs-12">
+         <div class="col-md-12">
             <nav class="navbar navbar-default">
                <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
@@ -75,17 +75,17 @@
                   </div><!-- /.navbar-collapse -->
                </div><!-- /.container-fluid -->
             </nav>
-            <img class="hero" src="assets/images/hero.png" class="img-responsive">
+            <img src="assets/images/hero.png" class="hero img-responsive">
          </div>
       </div>
 
       <!--Row 2: Works the Way You Do -->
-      <div class="row">
+      <div class="row margin-below-bottom-lg">
          <div class="col-md-offset-1 col-md-4">
             <h2>Filebox works the way you do</h2>
             <p>Get to all your files from anywhere, on any device, and share them with anyone.</p>
          </div>
-         <div class="col-md-offset-2 col-md-4">
+         <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <form>
                <div class="form-group">
                   <input type="name" class="form-control" id="exampleInputName1" placeholder="Full Name">
@@ -101,26 +101,27 @@
                      <input type="checkbox"> I agree to <a href="file:///C:/Users/Phil/Documents/AppDev/filebox_with_only_bootstrap/landing.html">Filebox Terms</a>
                   </label>
                </div>
-               <button type="submit" class="btn btn-primary btn-block">Sign up for free</button>
-               <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-google" aria-hidden="true"></i> Sign up for free with Google</button>
+               <button type="submit" class="btn btn-primary btn-block margin-below-bottom-sm">Sign up for free</button>
+               <hr>
+               <button type="submit" class="btn btn-primary btn-block margin-above-top-sm"><i class="fa fa-google" aria-hidden="true"></i> Sign up for free with Google</button>
             </form>
          </div>
       </div>
 
       <!--Row 3: Take Docs Anywhere -->
-      <div class="row">
+      <div class="row margin-below-bottom-lg">
          <div class="col-md-offset-1 col-md-4">
             <h2>Take your docs anywhere</h2>
             <p>Save files on your computer, then access them on your phone from the road. Everything you keep in Filebox is synced automatically to all your devices.</p>
          </div>
-         <div class="col-md-offset-2 col-md-4">
+         <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <img src="assets/images/docs-anywhere.png" class="img-responsive">
          </div>
       </div>
 
       <!--Row 4: Send Videos Quickly -->
-      <div class="row">
-         <div class="col-md-offset-1 col-md-4">
+      <div class="row margin-below-bottom-lg">
+         <div class="col-md-offset-1 col-md-4 padding-inside-top-sm">
             <img src="assets/images/send-videos-quickly.png" class="img-responsive">
          </div>
          <div class="col-md-offset-2 col-md-4">
@@ -130,19 +131,19 @@
       </div>
 
       <!--Row 5: Keep Photos Safe -->
-      <div class="row">
+      <div class="row margin-below-bottom-lg">
          <div class="col-md-offset-1 col-md-4">
             <h2>Keep your photos safe</h2>
             <p>Back up vacation photos automatically from your phone or computer. That way, memories are safe as soon as you make them, and you can relive them from any device.</p>
          </div>
-         <div class="col-md-offset-2 col-md-4">
+         <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <img src="assets/images/keep-your-photos-safe.png" class="img-responsive">
          </div>
       </div>
 
       <!--Row 6: Work on Slides -->
-      <div class="row">
-         <div class="col-md-offset-1 col-md-4">
+      <div class="row margin-below-bottom-lg">
+         <div class="col-md-offset-1 col-md-4 padding-inside-top-sm">
             <img src="assets/images/work-on-slides-together.png" class="img-responsive">
          </div>
          <div class="col-md-offset-2 col-md-4">
@@ -152,12 +153,12 @@
       </div>
 
       <!--Row 7: Never Lose File -->
-      <div class="row">
+      <div class="row margin-below-bottom-md">
          <div class="col-md-offset-1 col-md-4">
             <h2>Never lose a file again</h2>
             <p>Left your phone on the train? Your photos, docs, and videos are safe. Just sign in to Filebox from any device, and your files will be there waiting for you.</p>
          </div>
-         <div class="col-md-offset-2 col-md-4">
+         <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <img src="assets/images/never-lose-a-file-again.png" class="img-responsive">
          </div>
       </div>
@@ -172,12 +173,58 @@
 
       <!--Row 9: LINKS -->
       <div class="row">
-         <div class="col-md-2"></div>
-         <div class="col-md-2"></div>
-         <div class="col-md-2"></div>
-         <div class="col-md-2"></div>
-         <div class="col-md-2"></div>
-         <div class="col-md-2"></div>
+         <div class="col-md-2">
+            <h4>Filebox</h4>
+            <ul>
+               <li>Desktop app</li>
+               <li>Mobile apps</li>
+               <li>Plans</li>
+               <li>Security</li>
+            </ul>
+         </div>
+         <div class="col-md-2">
+            <h4>Company</h4>
+            <ul>
+               <li>About us</li>
+               <li>Jobs</li>
+               <li>Press</li>
+               <li>Blog</li>
+            </ul>
+         </div>
+         <div class="col-md-2">
+            <h4>Support</h4>
+            <ul>
+               <li>Help Center</li>
+               <li>Get started</li>
+               <li>Contact</li>
+               <li>Privacy & terms</li>
+            </ul>
+         </div>
+         <div class="col-md-2">
+            <h4>Community</h4>
+            <ul>
+               <li>Developers</li>
+               <li>Referrals</li>
+               <li>Forum</li>
+            </ul>
+         </div>
+         <div class="col-md-2">
+            <h4>Connect</h4>
+            <ul>
+               <li>Twitter</li>
+               <li>Facebook</li>
+               <li>Google+</li>
+               <li>YouTube</li>
+            </ul>
+         </div>
+         <div class="col-md-2">
+            <h4>Products</h4>
+            <ul>
+               <li>Pro</li>
+               <li>Business</li>
+               <li>Enterprise</li>
+            </ul>
+         </div>
       </div>
    </div>
 
