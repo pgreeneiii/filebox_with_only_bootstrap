@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <!--    To Dos     --
-   1. Center button on navbar
-   2. Fix width of navbar so it spreads across entire page (probably need to take away margins)
-   3. Fix width of hero photo so it isn't so large (maybe need to find a way to center it?)
-   4. Add margins between the registration buttons AND a line that distinctly separates them
-   5. Add margins between rows
+3. Fix width of hero photo so it isn't so large (maybe need to find a way to center it?)
+4. Fix content inside navbar so it has padding
 -->
 
 <html>
@@ -36,14 +33,14 @@
    <!-- Connect to Google Web Fonts -->
    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
-<!-- Just to see what is going on around my site-->
+   <!-- Just to see what is going on around my site-->
    <style>
-      .row{
-         border: thin red solid;
-      }
-      img, form, h1, h2, p{
-         border: thin green solid;
-      }
+   /*.row{
+      border: thin red solid;
+   }
+   img, form, h1, h2, p{
+      border: thin green solid;
+   }*/
    </style>
 </head>
 
@@ -51,30 +48,33 @@
    <div class="container">
 
       <!--Row 1: Hero Picture -->
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#"><i class="fa fa-dropbox" aria-hidden="true"></i> Filebox</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Download the app</a></li>
+                  <li><a href="#">Sign in</a></li>
+                  <li><button type="button" class="btn btn-default btn-block margin-above-top-xs">Try Filebox Business</button></li>
+               </ul>
+            </div><!-- /.navbar-collapse -->
+         </div><!-- /.container-fluid -->
+      </nav>
+
       <div class="row">
          <div class="col-md-12">
-            <nav class="navbar navbar-default">
-               <div class="container-fluid">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                     </button>
-                     <a class="navbar-brand" href="#"><i class="fa fa-dropbox" aria-hidden="true"></i> Filebox</a>
-                  </div>
-
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Download the app</a></li>
-                        <li><a href="#">Sign in</a></li>
-                        <li><button type="button" class="btn btn-default btn-block">Try Filebox Business</button></li>
-                     </ul>
-                  </div><!-- /.navbar-collapse -->
-               </div><!-- /.container-fluid -->
-            </nav>
             <img src="assets/images/hero.png" class="hero img-responsive">
          </div>
       </div>
@@ -164,18 +164,36 @@
       </div>
 
       <!--Row 8: FORM -->
-      <div class="row">
+      <div class="row margin-below-bottom-xl">
          <div class="col-md-offset-4 col-md-4">
             <h2>Get started now</h2>
-            <!--Add Form Here-->
+            <form>
+               <div class="form-group">
+                  <input type="name" class="form-control" id="exampleInputName1" placeholder="Full Name">
+               </div>
+               <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+               </div>
+               <div class="form-group">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+               </div>
+               <div class="checkbox">
+                  <label>
+                     <input type="checkbox"> I agree to <a href="file:///C:/Users/Phil/Documents/AppDev/filebox_with_only_bootstrap/landing.html">Filebox Terms</a>
+                  </label>
+               </div>
+               <button type="submit" class="btn btn-primary btn-block margin-below-bottom-sm">Sign up for free</button>
+               <hr>
+               <button type="submit" class="btn btn-primary btn-block margin-above-top-sm"><i class="fa fa-google" aria-hidden="true"></i> Sign up for free with Google</button>
+            </form>
          </div>
       </div>
 
       <!--Row 9: LINKS -->
-      <div class="row">
+      <div class="row margin-below-bottom-xl">
          <div class="col-md-2">
             <h4>Filebox</h4>
-            <ul>
+            <ul class="list-unstyled">
                <li>Desktop app</li>
                <li>Mobile apps</li>
                <li>Plans</li>
@@ -184,7 +202,7 @@
          </div>
          <div class="col-md-2">
             <h4>Company</h4>
-            <ul>
+            <ul class="list-unstyled">
                <li>About us</li>
                <li>Jobs</li>
                <li>Press</li>
@@ -193,7 +211,7 @@
          </div>
          <div class="col-md-2">
             <h4>Support</h4>
-            <ul>
+            <ul class="list-unstyled">
                <li>Help Center</li>
                <li>Get started</li>
                <li>Contact</li>
@@ -202,7 +220,7 @@
          </div>
          <div class="col-md-2">
             <h4>Community</h4>
-            <ul>
+            <ul class="list-unstyled">
                <li>Developers</li>
                <li>Referrals</li>
                <li>Forum</li>
@@ -210,7 +228,7 @@
          </div>
          <div class="col-md-2">
             <h4>Connect</h4>
-            <ul>
+            <ul class="list-unstyled">
                <li>Twitter</li>
                <li>Facebook</li>
                <li>Google+</li>
@@ -219,7 +237,7 @@
          </div>
          <div class="col-md-2">
             <h4>Products</h4>
-            <ul>
+            <ul class="list-unstyled">
                <li>Pro</li>
                <li>Business</li>
                <li>Enterprise</li>
