@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<!--    To Dos     --
-3. Fix width of hero photo so it isn't so large (maybe need to find a way to center it?)
-4. Fix content inside navbar so it has padding
+<!--    To Dos
+Nothing! You are done :)
 -->
 
 <html>
 
 <head>
-   <title>MY Filebox</title>
+   <title>Filebox</title>
 
    <meta charset="utf-8">
 
@@ -36,59 +35,86 @@
    <!-- Just to see what is going on around my site-->
    <style>
    /*.row{
-      border: thin red solid;
-   }
-   img, form, h1, h2, p{
-      border: thin green solid;
-   }*/
-   </style>
+   border: thin red solid;
+}
+img, form, h1, h2, p{
+border: thin green solid;
+}*/
+</style>
 </head>
 
 <body>
-   <div class="container">
+
+   <!-- Navbar Container -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+
+         <!-- Row 0: NAVBAR -->
+         <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+
+                  <a class="navbar-brand" href="#"><i class="fa fa-lg fa-fw fa-dropbox" aria-hidden="true"></i> Filebox</a>
+               </div>
+
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li>
+                        <p class = "navbar-btn">
+                           <a class = "btn btn-link" href="#">Download the app</a>
+                        </p>
+                     </li>
+                     <li>
+                        <p class="navbar-btn">
+                           <a class="btn btn-link" href="#">Sign in</a>
+                        </p>
+                     </li>
+                     <li>
+                        <p class="navbar-btn">
+                           <button type="button" class="btn btn-default">Try Filebox Business</button>
+                        </p>
+                     </li>
+                  </ul>
+               </div><!-- /.navbar-collapse -->
+            </div>
+         </div> <!-- /.Row 0 -->
+      </div><!-- /.Navbar Container -->
+   </nav>
+
+
+
+   <!-- Main Content Container -->
+   <div class="container padding-inside-top-md padding-inside-bottom-md">
+
 
       <!--Row 1: Hero Picture -->
-
-      <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="#"><i class="fa fa-dropbox" aria-hidden="true"></i> Filebox</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Download the app</a></li>
-                  <li><a href="#">Sign in</a></li>
-                  <li><button type="button" class="btn btn-default btn-block margin-above-top-xs">Try Filebox Business</button></li>
-               </ul>
-            </div><!-- /.navbar-collapse -->
-         </div><!-- /.container-fluid -->
-      </nav>
-
       <div class="row">
-         <div class="col-md-12">
-            <img src="assets/images/hero.png" class="hero img-responsive">
+         <div class="col-lg-10 col-lg-offset-1">
+            <img src="assets/images/hero.png" class="img-responsive">
          </div>
-      </div>
+      </div> <!-- /.Row 1 -->
+
 
       <!--Row 2: Works the Way You Do -->
       <div class="row margin-below-bottom-lg">
          <div class="col-md-offset-1 col-md-4">
-            <h2>Filebox works the way you do</h2>
+            <h1>Filebox works the way you do</h1>
             <p>Get to all your files from anywhere, on any device, and share them with anyone.</p>
          </div>
+
          <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <form>
                <div class="form-group">
-                  <input type="name" class="form-control" id="exampleInputName1" placeholder="Full Name">
+                  <input type="name" class="form-control" id="exampleInputName1" placeholder="Full name">
                </div>
                <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -98,15 +124,16 @@
                </div>
                <div class="checkbox">
                   <label>
-                     <input type="checkbox"> I agree to <a href="file:///C:/Users/Phil/Documents/AppDev/filebox_with_only_bootstrap/landing.html">Filebox Terms</a>
+                     <input type="checkbox"> I agree to <a href="file:///C:/Users/Phil/Documents/AppDev/filebox_with_only_bootstrap/landing.html">Filebox terms</a>
                   </label>
                </div>
                <button type="submit" class="btn btn-primary btn-block margin-below-bottom-sm">Sign up for free</button>
                <hr>
-               <button type="submit" class="btn btn-primary btn-block margin-above-top-sm"><i class="fa fa-google" aria-hidden="true"></i> Sign up for free with Google</button>
+               <button type="submit" class="btn btn-primary btn-block margin-above-top-sm"><i class="fa fa-fw fa-google" aria-hidden="true"></i> Sign up free with Google</button>
             </form>
          </div>
-      </div>
+      </div> <!-- /.Row 2 -->
+
 
       <!--Row 3: Take Docs Anywhere -->
       <div class="row margin-below-bottom-lg">
@@ -114,21 +141,25 @@
             <h2>Take your docs anywhere</h2>
             <p>Save files on your computer, then access them on your phone from the road. Everything you keep in Filebox is synced automatically to all your devices.</p>
          </div>
+
          <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <img src="assets/images/docs-anywhere.png" class="img-responsive">
          </div>
-      </div>
+      </div> <!-- /.Row 3 -->
+
 
       <!--Row 4: Send Videos Quickly -->
       <div class="row margin-below-bottom-lg">
          <div class="col-md-offset-1 col-md-4 padding-inside-top-sm">
             <img src="assets/images/send-videos-quickly.png" class="img-responsive">
          </div>
+
          <div class="col-md-offset-2 col-md-4">
             <h2>Send videos quickly</h2>
-            <p>Send your entire wedding video to family with a simple link. It's easy to share large files with anyone - even if they don't have a Filebox account.</p>
+            <p>Send your entire wedding video to family with a simple link. It's easy to share large files with anyone &mdash; even if they don't have a Filebox account.</p>
          </div>
-      </div>
+      </div> <!-- /.Row 4 -->
+
 
       <!--Row 5: Keep Photos Safe -->
       <div class="row margin-below-bottom-lg">
@@ -136,40 +167,46 @@
             <h2>Keep your photos safe</h2>
             <p>Back up vacation photos automatically from your phone or computer. That way, memories are safe as soon as you make them, and you can relive them from any device.</p>
          </div>
+
          <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <img src="assets/images/keep-your-photos-safe.png" class="img-responsive">
          </div>
-      </div>
+      </div> <!-- /.Row 5 -->
+
 
       <!--Row 6: Work on Slides -->
       <div class="row margin-below-bottom-lg">
          <div class="col-md-offset-1 col-md-4 padding-inside-top-sm">
             <img src="assets/images/work-on-slides-together.png" class="img-responsive">
          </div>
+
          <div class="col-md-offset-2 col-md-4">
             <h2>Work on slides together</h2>
             <p>Edit a presentation with teammates without emailing files back and forth. When you edit a file in a shared folder, everyone gets the update automatically.</p>
          </div>
-      </div>
+      </div> <!-- /.Row 6 -->
+
 
       <!--Row 7: Never Lose File -->
-      <div class="row margin-below-bottom-md">
+      <div class="row margin-below-bottom-sm">
          <div class="col-md-offset-1 col-md-4">
             <h2>Never lose a file again</h2>
             <p>Left your phone on the train? Your photos, docs, and videos are safe. Just sign in to Filebox from any device, and your files will be there waiting for you.</p>
          </div>
+
          <div class="col-md-offset-2 col-md-4 padding-inside-top-sm">
             <img src="assets/images/never-lose-a-file-again.png" class="img-responsive">
          </div>
-      </div>
+      </div> <!-- /.Row 7 -->
+
 
       <!--Row 8: FORM -->
-      <div class="row margin-below-bottom-xl">
+      <div class="row padding-inside-top-sm padding-inside-bottom-lg">
          <div class="col-md-offset-4 col-md-4">
-            <h2>Get started now</h2>
+            <h2 class = "text-center">Get started now</h2>
             <form>
                <div class="form-group">
-                  <input type="name" class="form-control" id="exampleInputName1" placeholder="Full Name">
+                  <input type="name" class="form-control" id="exampleInputName1" placeholder="Full name">
                </div>
                <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -179,18 +216,19 @@
                </div>
                <div class="checkbox">
                   <label>
-                     <input type="checkbox"> I agree to <a href="file:///C:/Users/Phil/Documents/AppDev/filebox_with_only_bootstrap/landing.html">Filebox Terms</a>
+                     <input type="checkbox"> I agree to <a href="file:///C:/Users/Phil/Documents/AppDev/filebox_with_only_bootstrap/landing.html">Filebox terms</a>
                   </label>
                </div>
                <button type="submit" class="btn btn-primary btn-block margin-below-bottom-sm">Sign up for free</button>
                <hr>
-               <button type="submit" class="btn btn-primary btn-block margin-above-top-sm"><i class="fa fa-google" aria-hidden="true"></i> Sign up for free with Google</button>
+               <button type="submit" class="btn btn-primary btn-block margin-above-top-sm"><i class="fa fa-fw fa-google" aria-hidden="true"></i> Sign up free with Google</button>
             </form>
          </div>
-      </div>
+      </div> <!-- /.Row 8 -->
+
 
       <!--Row 9: LINKS -->
-      <div class="row margin-below-bottom-xl">
+      <div class="row padding-inside-top-md padding-inside-bottom-lg">
          <div class="col-md-2">
             <h4>Filebox</h4>
             <ul class="list-unstyled">
@@ -200,6 +238,7 @@
                <li>Security</li>
             </ul>
          </div>
+
          <div class="col-md-2">
             <h4>Company</h4>
             <ul class="list-unstyled">
@@ -209,6 +248,7 @@
                <li>Blog</li>
             </ul>
          </div>
+
          <div class="col-md-2">
             <h4>Support</h4>
             <ul class="list-unstyled">
@@ -218,6 +258,7 @@
                <li>Privacy & terms</li>
             </ul>
          </div>
+
          <div class="col-md-2">
             <h4>Community</h4>
             <ul class="list-unstyled">
@@ -226,6 +267,7 @@
                <li>Forum</li>
             </ul>
          </div>
+
          <div class="col-md-2">
             <h4>Connect</h4>
             <ul class="list-unstyled">
@@ -235,6 +277,7 @@
                <li>YouTube</li>
             </ul>
          </div>
+
          <div class="col-md-2">
             <h4>Products</h4>
             <ul class="list-unstyled">
@@ -243,10 +286,10 @@
                <li>Enterprise</li>
             </ul>
          </div>
-      </div>
-   </div>
+      </div> <!-- /.Row 9 -->
+
+
+   </div> <!-- /.Main Content Container -->
 
 </body>
-
-
 </html>
